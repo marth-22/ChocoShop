@@ -6,5 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Produk extends Model
 {
-    //
+    protected $table = 'produks';
+
+    protected $fillable = [
+        'nama',
+        'deskripsi',
+        'harga',
+        'gambar',
+    ];
 }
